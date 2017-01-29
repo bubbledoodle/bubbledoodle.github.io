@@ -1,13 +1,13 @@
 # Setup
-title:        shuaiyu liang
-tagline:      Edge of the world 世界一隅
+title:        Liang shuaiyu's
+tagline:      Edge of the Internet 世界一隅
 baseurl:      ""
 paginate:     1
 
 # About/contact
 author:
   name:       sy.liang
-  url:        http://www.liangsy.com 
+  url:        http://www.liangsy.com
   email:      carlyleliang@gmail.com
   github:     bubbledoodle
 
