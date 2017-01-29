@@ -1,19 +1,56 @@
-# Setup
-title:        Liang shuaiyu's
-tagline:      Edge of the Internet 世界一隅
-baseurl:      ""
-paginate:     1
+# Welcome to Jekyll!
 
-# About/contact
-author:
-  name:       sy.liang
-  url:        http://www.liangsy.com
-  email:      carlyleliang@gmail.com
-  github:     bubbledoodle
+# Website settings
+title: Liang Shuaiyu
+description: sy.liang's blog,use Jekyll and github pages.
+keywords: personal blog,Jekyll,github,gh-pages
+baseurl:   # if you have suburl as homepage like '/homepage', please change it to '/homepage'
+url: http://www.liangsy.com  # url should be changed to 'http://www.jack003.com/homepage' as before
+# url: http://127.0.0.1:4000
+img_path: /static/assets/img/blog  # url should be changed to '/homepage/static/assets/img/blog' as before
 
-# Gems
-gems:
-  - jekyll-paginate
+# author -- index page "about me" section
+author:  # change following line to your infomation.
+  name: carl  # Be used at blog posts' author.
+  first_name: shuaiyu  # Be used at index page about me section.
+  last_name: liang  # Be used at index page about me section.
+  cv:   # A online CV can be printed as PDF, leave blank if you don't have now
+  email: carlyleliang@gmail.com  # Leave blank if you don't have now
+  facebook_username:  # Leave blank if you don't have now
+  github_username: bubbledoodle  # Leave blank if you don't have now
+  avatar: /static/assets/img/landing/Jack.jpg  # upload your avatar at directory and edit it.
+  skill_icon1:
+    - name: icon-python
+    - name: icon-shell
+  skill_icon2:
+    - name: icon-angular
+    - name: icon-docker
+  desc: Curiosity drives every learning. A network engineer, NFV, P4. Code the world. Cat and piano lover. Photographer. Traveller.
 
-#Others
+# comment
+disqus:  # if you wanna comment feature, go to https://disqus.com/ to get your configuration; if not, comment following two lines.
+  # name: 
+  # public_key: tj2MPaNlHMONwTH5bGDNSXyaBpW7q282MeUzh5CwcjJerNhK8Kxk3aWo7IckzTX7
+
+# analytics
+## google analytics
+ga:  # if you wanna this feature, go to https://www.google.com/analytics/ to get your configuration; if not, comment following line.
+  # id: UA-73784599-1
+
+## growingIO
+gio:  # if you wanna this feature, go to https://www.growingio.com/ to get your configuration; if not, comment following line.
+  # id: a49d4901c7853da9
+
+## donation
+donation: on  # type 'on'/'off' to choice display donation button at post page or not
+
+
+# Build settings
+encoding: utf-8
+
+# other settings
+highlighter: rouge
 markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
