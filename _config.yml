@@ -129,11 +129,13 @@ events:
 
   - image: "/img/timeline/mountietocat.png"
     date: "Sep. 2011 to Jul. 2015"
-    description: "Bachlor from Harbin Institute of Technology"
+    description: "Bachlor of Engineering in Harbin Institute of Technology"
 
 # First image of the Timeline
 
-timeline-img: "/img/timeline/default.png"
+  - image: "/img/timeline/default.png"
+    date: "May 1993"
+    Description: "Embrace the world"
 
 ###########
 # Contact #
