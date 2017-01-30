@@ -115,10 +115,10 @@ syntax-highlight: True
 events:
   - image: "/img/timeline/total-eclipse-of-the-octocat.jpg"
     date: "Future"
-    description:"Dream bigger"
+    description: "Dream bigger"
 
   - image: "/img/timeline/collabocats.jpg"
-    date: "sep 2016 - Today"
+    date: "Sep. 2016 - Today"
     description: "Join High speed network group @ NYU"
 
   - image: "/img/timeline/octoliberty.png"
@@ -172,9 +172,9 @@ err-404-img: "/img/labtocat.png"
 # GPG on Keybase #
 ##################
 
-keybase-username: johnsmith
-keybase-in-social: True
-keybase-in-footer: True
+#keybase-username: johnsmith
+#keybase-in-social: True
+#keybase-in-footer: True
 
 ################################################################################
 
