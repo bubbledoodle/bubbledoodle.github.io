@@ -134,8 +134,6 @@ events:
 # First image of the Timeline
 
   timeline-img: "/img/timeline/default.png"
-    date: "May 1993"
-    Description: "Embrace the world"
 
 ###########
 # Contact #
