@@ -1,268 +1,85 @@
-# <a name="jalpc"></a>Jalpc. [![Analytics](https://ga-beacon.appspot.com/UA-73784599-1/welcome-page)](https://github.com/Jack614/jalpc_jekyll_theme)
+# { Personal } Jekyll Theme
+![Build Status](https://travis-ci.org/PanosSakkos/personal-jekyll-theme.svg?branch=master)
+![license](https://img.shields.io/badge/license-MIT-blue.svg?link=https://github.com/dono-app/ios/blob/master/LICENSE)
+[![Join the chat at https://gitter.im/PanosSakkos/personal-jekyll-theme](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/PanosSakkos/personal-jekyll-theme?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
-[![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
-[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badge/)
+{ Personal } is a free responsive Jekyll theme, about you :wink:
 
-<http://www.jack003.com>
+You can watch it in action [here](https://panossakkos.github.io/personal-jekyll-theme/)!
 
-![Blog](readme_files/blog.gif)
+<img src="https://github.com/panossakkos/personal-jekyll-theme/raw/master/.github/personal-mobile.mov.gif" height="480">
 
-* [3 steps to setup this theme at your website!](#three-steps)
-* [Features](#features)
-    * [Index page](#index-page)
-    * [_data/\*.yml](#mofify-datayml)
-    * [Categories in blog page](#categories-in-blog-page)
-    * [Pagination](#pagination)
-    * [Page views counter](#page-views-counter)
-    * [Multilingual Page](#multilingual-page)
-    * [Web analytics](#web-analytics)
-    * [Comment](#comment)
-    * [Share](#share)
-    * [Search engines](#search-engines)
-    * [Compress CSS and JS files](#compress-css-js)
-    * [CNAME](#cname)
-* [Put in a Jalpc Plug](#put-in-a-jalpc-plug)
-* [Upgrading Jalpc](#upgrading-jalpc)
-    * [Ensure there's an upstream remote](#ensure-theres-an-upstream-remote)
-    * [Pull in the latest changes](#pull-in-the-latest-changes)
-* [Thanks to the following](#thanks-to-the-following)
-* [Contributing](#contributing)
-* [Ad](#ad)
+<img src="https://github.com/panossakkos/personal-jekyll-theme/raw/master/.github/personal-desktop.mov.gif" height="600" width="960">
 
-This is a simple, beautiful and swift theme for Jekyll. It's mobile first, fluidly responsive, and delightfully lightweight.
+## What value does { Personal } add
 
-If you're completely new to Jekyll, I recommend checking out the documentation at <http://jekyllrb.com> or there's a tutorial by Smashing Magazine.
+* Fork of [Timeline](https://github.com/kirbyt/timeline-jekyll-theme) (mashup of [Grayscale by Start Bootstrap](https://github.com/IronSummitMedia/startbootstrap-grayscale) and [Agency Jekyll Theme](https://github.com/y7kim/agency-jekyll-theme))
+  * Modern and minimal design
+    * Responsive templates for home page, blog archive and posts. Looks great on mobile, tablet, and desktop devices
+    * Sweet animations
+    * Gracefully degrades in older browsers. Compatible with Internet Explorer 8+ and all modern browsers
+  * Timeline
+    * Tell your story so far with a sleek timeline of dates, pictures and descriptions
+  * White on black text, making the reading experience tireless
+  * Google analytics  
+* Customization and full control of your website and blog through the site config
+* Customization of the website's coloring
+* Blogging functionality
+  * Preview of the latest post in the home page
+  * Archive page
+  * Syntax highlighting
+  * Emojis
+  * Gesture navigation in archive and post pages by swiping
+  * Hashtags
+  * Categories
+  * Disqus comments
+  * Bootstrap share buttons
+  * RSS feed
+* Author blurb under the posts
+* 404 page
+* iOS and Android Web App mode
+* Enforcing of https protocol
+* Protection from email harvesting
+* Sitemap
+* Travis CI integration with [html-proofer](https://github.com/gjtorikian/html-proofer)
 
-## <a name="three-steps"></a> 3 steps to setup this theme at your website!
+## Documentation
 
-Here is a [document](http://www.jack003.com/html/2017/01/28/3-steps-to-setup-website-with-Jalpc.html) of how to setup this theme with 3 steps.
+The theme contains documentation in the form of [blog posts](https://panossakkos.github.io/personal-jekyll-theme/blog/index.html).
 
-## <a name="feature"></a>Features
+## How to run locally
 
-### <a name="#index-page"></a>Index page
+First, you need to install jekyll and the dependencies of { Personal } by running:
 
-The index page is seprated into several sections and they are located in `_includes/sections`,the configuration is in `_data/landing.yml` and section's detail configuration is in `_data/*.yml`.
+```shell
+./scripts/install
+```
 
-#### <a name="datayml"></a>`_data/*.yml`
+Then, you can build and serve your website by simply running:
 
-These files are used to dynamically render pages, so you almost don't have to edit *html files* to change your own theme, besides you can use `jekyll serve --watch` to reload changes.
+```shell
+./scripts/serve-production
+```
 
-The following is mapping between *yml files* to *sections*.
+To serve across lan (requires su to forward the port 4000 over lan):
 
-* landing.yml ==> index.html
-* index/language.yml ==> index.html
-* index/careers.yml  ==>  _includes/sections/career.html
-* index/skills.yml  ==>  _includes/sections/skills.html
-* index/projects.yml  ==>  _includes/sections/projects.html
-* index/links.yml  ==>  _includes/sections/links.html
+```shell
+./scripts/serve-lan-production
+```
 
-This *yml file* is about blog page navbar
+## OSS used in { Personal }
 
-* blog.yml ==> _includes/header.html
+One of the reasons { Personal } is real is the following OSS projects:
 
-The following is mapping between *yml files* to *donation*
+  1. [Grayscale](http://startbootstrap.com/template-overviews/grayscale/)
+  2. [hammer.js](https://hammerjs.github.io/)
+  3. [highlightjs](https://highlightjs.org/)
+  4. [RRSSB](https://github.com/kni-labs/rrssb)
+  5. [Timeline](https://github.com/kirbyt/timeline-jekyll-theme)
+  6. [typed.js](https://github.com/mattboldt/typed.js/)
 
-* donation/donationlist.yml ==> blog/donate.html
-* donation/alipay.yml  ==>  blog/donate.html
-* donation/wechat_pay.yml ==> blog/donate.yml
-
-### <a name="categories-in-blog-page"></a>Categories in blog page
-
-In blog page, we categorize posts into several categories by url, all category pages use same template html file - `_includes/category.html`.
-
-For example: URL is `http://127.0.0.1:4000/python/`. In `_data/blog.yml`, we define this category named `Python`, so in `_includes/category.html` we get this URL(/python/) and change it to my category(Python), then this page are posts about **Python**. The following code is about how to get url and display corresponding posts in  `_includes/category.html`.
-
-```html
-<div class="row">
-    <div class="col-lg-12 text-center">
-        <div class="navy-line"></div>
-        {% assign category = page.url | remove:'/' | capitalize %}
-        {% if category == 'Html' %}
-        {% assign category = category | upcase %}
-        {% endif %}
-        <h1>{{ category }}</h1>
-    </div>
+<div style="font-size:16px;margin:0 auto;width:300px">
+    <a href="https://blockchain.info/address/1LHuKC9Em3KA5yoZaf7nngnNdf9K7s2gSi">
+        <img src="https://blockchain.info/Resources/buttons/donate_64.png"/>
+    </a>
 </div>
-<div class="wrapper wrapper-content  animated fadeInRight blog">
-    <div class="row">
-        <ul id="pag-itemContainer" style="list-style:none;">
-            {% assign counter = 0 %}
-            {% for post in site.categories[category] %}
-            {% assign counter = counter | plus: 1 %}
-            <li>
-```
-
-### <a name="pagination"></a>Pagination
-
-The pagination in jekyll is not very perfect,so I use front-end web method,there is a [blog](http://www.jack003.com/html/2016/06/04/jekyll-pagination-with-jpages.html) about the method and you can refer to [jPages](http://luis-almeida.github.io/jPages).
-
-### <a name="page-views-counter"></a>Page views counter
-
-Many third party page counter platforms are too slow,so I count my website page view myself,the javascript file is [static/js/count.min.js](https://github.com/JiaKunUp/jalpc_jekyll_theme/blob/gh-pages/static/js/count.min.js) ([static/js/count.js](https://github.com/JiaKunUp/jalpc_jekyll_theme/blob/gh-pages/static/js/count.js)),the backend API is written with flask on [Vultr VPS](https://www.vultr.com/), detail code please see [jalpc-flask](https://github.com/JiaKunUp/jalpc-flask).
-
-### <a name="multilingual-page"></a>Multilingual Page
-
-The landing page has multilingual support with the [i18next](http://i18next.com) plugin.
-
-Languages are configured in the `_data/index/language.yml` file.
-
-> If you don't need this feature, please clear content in file `_data/language.yml` and folder `static/locales/`.
-
-#### Step 1
-
-Add a new language entry
-
-```yml
-languages:
-  - locale: 'en'
-    flag: 'static/img/flags/United-States.png'
-  - locale: '<language_locale>'
-    flag: '<language_flag_url>'
-```
-
-#### Step 2
-
-Add a new json (`static/locales/<language_locale>.json`) file that contains the translations for the new locale.
-
-Example `en.json`
-
-```json
-{
-  "website":{
-    "title": "Jalpc"
-  },
-  "nav":{
-    "home": "Home",
-    "about_me": "About",
-    "skills": "Skills",
-    "career": "Career",
-    "blog": "Blog",
-    "contact": "Contact"
-  }
-}
-```
-
-#### Step 3
-
-Next you need to add html indicators in all place you want to use i18n.(`_includes/sections/*.html` and `index.html`)
-
-Example:
-
-``` html
-<a class="navbar-brand" href="#page-top" id="i18_title"><span data-i18n="website.title">{{ site.title }}</span></a>
-```
-
-#### Step 4
-
-Next you need to initialise the i18next plugin(`index.html`):
-
-``` javascript
-$.i18n.init(
-    resGetPath: 'locales/__lng__.json',
-    load: 'unspecific',
-    fallbackLng: false,
-    lng: 'en'
-}, function (t)
-    $('#i18_title').i18n();
-});
-```
-
-### <a name="web-analytics"></a>Web analytics
-
-I use [Google analytics](https://www.google.com/analytics/) and [GrowingIO](https://www.growingio.com/) to do web analytics, you can choose either to realize it,just register a account and replace id in `_config.yml`.
-
-### <a name="comment"></a>Comment
-
-I use [Disqus](https://disqus.com/) to realize comment. You should set disqus_shortname and get public key and then, in `_config.yml`, edit the disqus value to enable Disqus.
-
-### <a name="share"></a>Share
-
-I use [AddToAny](https://www.addtoany.com/) to share my blog on other social network platform. You can go to this website to custom your share buttons and paste code at `_includes/share.html`.
-
-![share](readme_files/share.png)
-
-### <a name="search-engines"></a>Search engines
-
-I use javascript to realize blog search,you can double click `Ctrl` or click the icon at lower right corner of the page,the detail you can got to this repo: <https://github.com/androiddevelop/jekyll-search>.
-
-Just use it.
-
-![search](readme_files/search.gif)
-
-### <a name="compress-css-js"></a>Compress CSS and JS files
-
-All CSS and JS files are compressed at `/static/assets`.
-
-I use [UglifyJS2](https://github.com/mishoo/UglifyJS2) and [clean-css](https://github.com/jakubpawlowicz/clean-css) to compress CSS and JS files. If you want to custom CSS and JS files, you need to do the following:
-
-1. Install **UglifyJS2** and **clean-css**: `npm install -g uglifyjs; npm install -g clean-css`, then run `npm install` at root dir of project.
-2. Compress script is **build.js**, index page has its own CSS and JS compressed files, they are :
-  * **app-index-xxx.min.css**
-  * **app-index-xxx.min.js**
-  * **i18-xxx.min.js**
-
-  other pages are
-  * **app-xxx.min.css**
-  * **app-xxx.min.js**
-  * **jPage-xxx.min.js**
-
-  404 page are
-  * **fof-xxx.min.css**
-  * **fof-xxx.min.js**
-
-  **xxx** is date when you compress your files.
-3. If you want to add/remove CSS/JS files, just edit **build.js**, and run `npm run compress` at root dir of project.
-4. At last, edit `_includes/head.html` and `_includes/index_head.html` change CSS and JS files link to you generated just now.
-
-### <a name="cname"></a>CNAME
-
-With **CNAME** you can release weisite at your domain name.
-
-## <a name="put-in-a-jalpc-plug"></a>Put in a Jalpc Plug
-
-If you want to give credit to the Jalpc theme with a link to my personal website <http://www.jack003.com>, that'd be awesome. No worries if you don't.
-
-## <a name="upgrading-jalpc"></a>Upgrading Jalpc
-
-Jalpc is always being improved by its users, so sometimes one may need to upgrade.
-
-### <a name="ensure-theres-an-upstream-remote"></a>Ensure there's an upstream remote
-
-If `git remote -v` doesn't have an upstream listed, you can do the following to add it:
-
-```
-git remote add upstream https://github.com/JiaKunUp/jalpc_jekyll_theme.git
-```
-
-### <a name="pull-in-the-latest-changes"></a>Pull in the latest changes
-
-```
-git pull upstream gh-pages
-```
-
-There may be merge conflicts, so be sure to fix the files that git lists if they occur. That's it!
-
-## <a name="thanks-to-the-following"></a>Thanks to the following
-
-* [Jekyll](http://jekyllrb.com)
-* [Bootstrap](http://www.bootcss.com)
-* [jPages](http://luis-almeida.github.io/jPages)
-* [i18next](http://i18next.github.io/i18next)
-* [pixyll](https://github.com/johnotander)
-* [androiddevelop](https://github.com/androiddevelop)
-* [UglifyJS2](https://github.com/mishoo/UglifyJS2)
-* [clean-css](https://github.com/jakubpawlowicz/clean-css)
-
-## <a name="contributing"></a>Contributing
-
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
-
-## <a name="ad"></a>Ad
-
-[Jalpc-A](https://github.com/Jack614/Jalpc-A): another Jekyll theme written by [AngularJS](https://angularjs.org/).
-

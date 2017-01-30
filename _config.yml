@@ -1,56 +1,203 @@
-# Welcome to Jekyll!
 
-# Website settings
-title: Liang Shuaiyu
-description: sy.liang's blog,use Jekyll and github pages.
-keywords: personal blog,Jekyll,github,gh-pages
-baseurl:   # if you have suburl as homepage like '/homepage', please change it to '/homepage'
-url: http://www.liangsy.com  # url should be changed to 'http://www.jack003.com/homepage' as before
-# url: http://127.0.0.1:4000
-img_path: /static/assets/img/blog  # url should be changed to '/homepage/static/assets/img/blog' as before
+# Site settings
 
-# author -- index page "about me" section
-author:  # change following line to your infomation.
-  name: carl  # Be used at blog posts' author.
-  first_name: shuaiyu  # Be used at index page about me section.
-  last_name: liang  # Be used at index page about me section.
-  cv:   # A online CV can be printed as PDF, leave blank if you don't have now
-  email: carlyleliang@gmail.com  # Leave blank if you don't have now
-  facebook_username:  # Leave blank if you don't have now
-  github_username: bubbledoodle  # Leave blank if you don't have now
-  avatar: /static/assets/img/landing/Jack.jpg  # upload your avatar at directory and edit it.
-  skill_icon1:
-    - name: icon-python
-    - name: icon-shell
-  skill_icon2:
-    - name: icon-angular
-    - name: icon-docker
-  desc: Curiosity drives every learning. A network engineer, NFV, P4. Code the world. Cat and piano lover. Photographer. Traveller.
+# NB! Set your site's url, otherwise stuff will break :)
 
-# comment
-disqus:  # if you wanna comment feature, go to https://disqus.com/ to get your configuration; if not, comment following two lines.
-  # name: 
-  # public_key: tj2MPaNlHMONwTH5bGDNSXyaBpW7q282MeUzh5CwcjJerNhK8Kxk3aWo7IckzTX7
+url: "https://bubbledoodle.github.io"
 
-# analytics
-## google analytics
-ga:  # if you wanna this feature, go to https://www.google.com/analytics/ to get your configuration; if not, comment following line.
-  # id: UA-73784599-1
+# If you're hosting your site at a Project repository on GitHub pages
+# (https://yourusername.github.io/repository-name)
+# and NOT your user repository (https://yourusername.github.io)
+# then add in the baseurl here, like this: "/repository-name"
+#
+# NB! Without this *nothing* will work, because it's used in every path :)
 
-## growingIO
-gio:  # if you wanna this feature, go to https://www.growingio.com/ to get your configuration; if not, comment following line.
-  # id: a49d4901c7853da9
+baseurl: /personal-jekyll-theme
 
-## donation
-donation: on  # type 'on'/'off' to choice display donation button at post page or not
+# Google tracking id
 
+google-tracking-id: ""
 
-# Build settings
-encoding: utf-8
+# Forces https everywhere in your website, except when you serve it locally
+# If you are not hosted on Github Pages, and your host doesn't support https
+# then you should disable it
 
-# other settings
-highlighter: rouge
-markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
+force-https: True
+
+#############
+# HTML Head #
+#############
+
+lang: "en"
+author: "Shuaiyu Liang"
+title: "{ Shuaiyu Liang }"
+description: " The edge of the Internet. 世界一隅  Life need a bits of curiosity. Network Engineer, Coder, piano & cat lover, photographer"
+keywords: "Shuaiyu, blog, photos"
+favicon: "/img/favicon.ico"
+
+################
+# Header layout #
+################
+
+black-favicon: "/img/black-lab-glass.ico"
+
+background-img: "../img/intro-bg.jpg"
+
+##############################
+# Dynamic Text on the Header #
+##############################
+
+dynamic-typing: True
+shuffle: True # Shuffle the lines.
+loop: True
+loop-count: False # Set False for infinite loop, or set any number for finite loop.
+type-speed: 10
+start-delay: 200
+delete-delay: 5000
+lines: # You can add HTML Tags in the Text
+  - text: "The lower you fall, the higher you'll fly."
+  - text: "Where’s your will to be weird?"
+  - text: "New York never sleeps"
+  - text: "The truth is you are the story"
+
+me-img: "/img/jetpacktocat.png"
+
+##############################
+# Color the browser elements #
+##############################
+color-browser: "#000000"
+apple-status-bar-style: "black"
+
+################
+# Web app mode #
+################
+
+web-app-mode: True
+
+# Icons for Web App mode
+
+icon-36p: "/img/web-app/icon-36p.png"
+icon-48p: "/img/web-app/icon-48p.png"
+icon-72p: "/img/web-app/icon-72p.png"
+icon-96p: "/img/web-app/icon-96p.png"
+icon-144p: "/img/web-app/icon-144p.png"
+icon-192p: "/img/web-app/icon-192p.png"
+
+########
+# Blog #
+########
+
+enable-gesture-navigation: True
+
+post-preview-words: 96
+
+paginate: 5
+
+email-share: True
+fb-share: True
+twitter-share: True
+linkedin-share: True
+reddit-share: True
+google-plus-share: True
+tumblr-share: True
+pinterest-share: True
+pocket-share: True
+vkontakte-share: True
+
+disqus-shortname: "panossakkos"
+
+syntax-highlight: True
+
+############
+# Timeline #
+############
+
+events:
+  - image: "/img/timeline/spidertocat.png"
+    date: "September 2013 - Today"
+    description: "Saving the neighborhood!"
+  - image: "/img/timeline/baracktocat.jpg"
+    date: "September 2007 - August 2013"
+    description: "Started coding"
+
+# First image of the Timeline
+
+timeline-img: "/img/timeline/default.png"
+
+###########
+# Contact #
+###########
+
+email: "carlyleliang@gmail.com"
+
+################
+# Author Blurb #
+################
+
+# The author blurb goes underneath blog posts.
+# This works best when your author blurb image has a transparent background, or matches your site background color.
+
+# if the author_blurb is not set, then this feature is skipped
+author_blurb: "Shuaiyu liang is an awesome person, lives in Brooklyn New York. He loves and believes in engineering. He likes to play the piano, travel or shoot nice pictures in his free time."
+author_blurb_image: "/img/author.png"
+
+##################
+# Social Buttons #
+##################
+
+social:
+  - title: "facebook"
+    url: "https://facebook.com/"
+  - title: "twitter"
+    url: "https://twitter.com/"
+  - title: "github"
+    url: "https://github.com/PanosSakkos/personal-jekyll-theme"
+  - title: "bitcoin"
+    url: "https://blockchain.info/address/1LHuKC9Em3KA5yoZaf7nngnNdf9K7s2gSi"
+  - title: "rss"
+    url: "/feed.xml"
+  - title: "instagram"
+    url: "https://www.instagram.com/sy.liang/"
+
+############
+# 404 page #
+############
+
+err-404-img: "/img/labtocat.png"
+
+##################
+# GPG on Keybase #
+##################
+
+keybase-username: johnsmith
+keybase-in-social: True
+keybase-in-footer: True
+
+################################################################################
+
+# NB! Tread carefully if you want to change the variables below this point!
+
+# Sections shown in the index page
+
+pages_list:
+  About: 'about'
+  Blog: 'latest-post'
+  Timeline: 'timeline'
+  Contact: 'contact'
+
+# Exclusion list from the generated _site
+
+exclude: ["LICENSE", "README.md", "CONTRIBUTING", "CONTRIBUTORS", "scripts"]
+
+# Pagination path
+
+paginate_path: "blog/page:num/"
+
+# Enable minification SASS
+
+sass:
+  style: compressed
+
+gems:
+  - jekyll-paginate
+  - jemoji
