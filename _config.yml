@@ -113,12 +113,21 @@ syntax-highlight: True
 ############
 
 events:
-  - image: "/img/timeline/spidertocat.png"
-    date: "September 2013 - Today"
-    description: "Saving the neighborhood!"
-  - image: "/img/timeline/baracktocat.jpg"
-    date: "September 2007 - August 2013"
-    description: "Started coding"
+  - image: "/img/timeline/total-eclipse-of-the-octocat.jpg"
+    date: "Future"
+    description:"Dream bigger"
+
+  - image: "/img/timeline/collabocats.jpg"
+    date: "sep 2016 - Today"
+    description: "Join High speed network group @ NYU"
+
+  - image: "/img/timeline/octoliberty.png"
+    date: "Sep. 2015 - Today"
+    description: "Start Master @ NYU"
+
+  - image: "/img/timeline/mountietocat.png"
+    date: "Sep. 2011 to Jul. 2015"
+    description: "Bachlor from Harbin Institute of Technology"
 
 # First image of the Timeline
 
@@ -147,15 +156,9 @@ author_blurb_image: "/img/author.png"
 
 social:
   - title: "facebook"
-    url: "https://facebook.com/"
-  - title: "twitter"
-    url: "https://twitter.com/"
+    url: "https://https://www.facebook.com/shuaiyu.liang"
   - title: "github"
-    url: "https://github.com/PanosSakkos/personal-jekyll-theme"
-  - title: "bitcoin"
-    url: "https://blockchain.info/address/1LHuKC9Em3KA5yoZaf7nngnNdf9K7s2gSi"
-  - title: "rss"
-    url: "/feed.xml"
+    url: "https://github.com/bubbledoodle"
   - title: "instagram"
     url: "https://www.instagram.com/sy.liang/"
 
@@ -169,9 +172,9 @@ err-404-img: "/img/labtocat.png"
 # GPG on Keybase #
 ##################
 
-keybase-username: johnsmith
-keybase-in-social: True
-keybase-in-footer: True
+# keybase-username: johnsmith
+# keybase-in-social: True
+# keybase-in-footer: True
 
 ################################################################################
 
