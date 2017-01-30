@@ -52,7 +52,7 @@ shuffle: True # Shuffle the lines.
 loop: True
 loop-count: False # Set False for infinite loop, or set any number for finite loop.
 type-speed: 10
-start-delay: 200
+start-delay: 390
 delete-delay: 2800
 lines: # You can add HTML Tags in the Text
   - text: "The lower you fall, the higher you'll fly."
@@ -61,6 +61,7 @@ lines: # You can add HTML Tags in the Text
   - text: "New York never sleeps."
   - text: "The truth is you are the story."
   - text: "世界一隅"
+  - text: "等风来"
 
 me-img: "/img/author.png"
 
@@ -134,8 +135,6 @@ events:
 # First image of the Timeline
 
 timeline-img: "/img/timeline/default.png"
-date: "May 1993"
-description: "Embrace the world"
 ###########
 # Contact #
 ###########
