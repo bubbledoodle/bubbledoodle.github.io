@@ -133,7 +133,7 @@ events:
 
 # First image of the Timeline
 
-  - image: "/img/timeline/default.png"
+  timeline-img: "/img/timeline/default.png"
     date: "May 1993"
     Description: "Embrace the world"
 
