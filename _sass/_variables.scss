@@ -7,15 +7,7 @@ $primary-color: #000;
 $secondary-color: #00cdff;
 
 // Font color
-// $font-color: #fff;
-
-$font-stack:    Helvetica, sans-serif;
-$primary-color: #fff;
-
-body {
-  font: 100% $font-stack;
-  color: $primary-color;
-}
+$font-color: #fff;
 
 $navbar-text-shadow: true;
 $header-text-shadow: true;
