@@ -7,13 +7,16 @@ $primary-color: #fff;
 $secondary-color: #00a4cc;
 
 // Font color
-$font-color: #fff;
+$font-color: #000;
+
+// Other colors
 
 $navbar-text-shadow: False;
 $header-text-shadow: False;
+
 $header-background-color: $primary-color;
 $intro-text-color: $font-color;
-$navbar-color: $font-color;
+$navbar-color: $primary-color;
 $navbar-lg-collapse-background-color: $header-background-color;
 $navbar-lg-background: transparent;
 $navbar-sm-background-color: $navbar-lg-collapse-background-color;
