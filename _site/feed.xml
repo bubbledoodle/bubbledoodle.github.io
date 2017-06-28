@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title>  Shuaiyu Liang</title>
+		<description>Life need a bits of curiosity. Engineer, Coder, piano &amp; cat lover, photographer</description>
+		<link>https://bubbledoodle.github.io</link>
+		<atom:link href="https://bubbledoodle.github.io/feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>Title</title>
+				
+				
+					<description>&lt;h1 id=&quot;hello-world&quot;&gt;HELLO WORLD&lt;/h1&gt;
+&lt;p&gt;Build this blog is like takes me about one day but few other days to enjoy it. To make it more meaningful than how currently it is, I dicided to post this very first blog.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Mon, 30 Jan 2017 00:00:00 -0500</pubDate>
+				<link>https://bubbledoodle.github.io/category/2017/01/30/Hello-World.html</link>
+				<guid isPermaLink="true">https://bubbledoodle.github.io/category/2017/01/30/Hello-World.html</guid>
+			</item>
+		
+			<item>
+				<title>Welcome to { Personal } Jekyll Theme!</title>
+				
+				
+					<description>&lt;p&gt;Click the view more posts link bellow, to see the currently available post-tutorials to help you get your { Personal } website up and running quicker!&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Sat, 27 Jun 2015 00:00:00 -0400</pubDate>
+				<link>https://bubbledoodle.github.io/tech/2015/06/27/welcome.html</link>
+				<guid isPermaLink="true">https://bubbledoodle.github.io/tech/2015/06/27/welcome.html</guid>
+			</item>
+		
+	</channel>
+</rss>

@@ -30,8 +30,8 @@ force-https: False
 
 lang: "en"
 author: "Shuaiyu Liang"
-title: "{ Shuaiyu Liang }"
-description: " The edge of the Internet. 世界一隅  Life need a bits of curiosity. Network Engineer, Coder, piano & cat lover, photographer"
+title: "  Shuaiyu Liang"
+description: "Life need a bits of curiosity. Engineer, Coder, piano & cat lover, photographer"
 keywords: "Shuaiyu, blog, photos"
 favicon: "/img/favicon.ico"
 
@@ -39,9 +39,10 @@ favicon: "/img/favicon.ico"
 # Header layout #
 ################
 
-black-favicon: "/img/black-lab-glass.ico"
+black-favicon: "/img/favicon.ico"
 
 background-img: "../img/intro-bg.jpg"
+#resume-img: "/img/resume-bg.jpg"
 
 ##############################
 # Dynamic Text on the Header #
@@ -56,11 +57,11 @@ start-delay: 390
 delete-delay: 2800
 lines: # You can add HTML Tags in the Text
   - text: "The lower you fall, the higher you'll fly."
-  - text: "This is my edge of the Internet."
+  #- text: "This is my edge of the Internet."
   - text: "Where’s your will to be weird?"
   - text: "New York never sleeps."
   - text: "The truth is you are the story."
-  - text: "世界一隅"
+  - text: "#Violet pride"
   - text: "等风来"
 
 me-img: "/img/author.png"
@@ -187,6 +188,7 @@ keybase-in-footer: True
 pages_list:
   About: 'about'
   Blog: 'latest-post'
+  Resume: 'resume'
   Timeline: 'timeline'
   Contact: 'contact'
 
