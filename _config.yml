@@ -91,24 +91,24 @@ icon-192p: "/img/web-app/icon-192p.png"
 # Blog #
 ########
 
-enable-gesture-navigation: True
+enable-gesture-navigation: False
 
-post-preview-words: 96
+post-preview-words: 30
 
 paginate: 5
 
 email-share: True
 fb-share: True
 twitter-share: True
-linkedin-share: True
+linkedin-share: False
 reddit-share: True
 google-plus-share: True
-tumblr-share: True
+tumblr-share: False
 pinterest-share: True
-pocket-share: True
-vkontakte-share: True
+pocket-share: False
+vkontakte-share: False
 
-disqus-shortname: "panossakkos"
+disqus-shortname: #"panossakkos"
 
 syntax-highlight: True
 
@@ -150,8 +150,8 @@ email: "carlyleliang@gmail.com"
 # This works best when your author blurb image has a transparent background, or matches your site background color.
 
 # if the author_blurb is not set, then this feature is skipped
-author_blurb: "Shuaiyu liang, sleepless in New York. Engineering, Coding, Foodie, Piano, Photograph, Cat"
-author_blurb_image: "/img/author.png"
+author_blurb: #"Shuaiyu liang, sleepless in New York."
+author_blurb_image: #"/img/author.png"
 
 ##################
 # Social Buttons #

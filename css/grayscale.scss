@@ -29,11 +29,14 @@ h3,
 h4,
 h5,
 h6 {
+    text-align: center;
     margin: 0 0 35px;
     text-transform: uppercase;
-    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Avenir", "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
-    letter-spacing: 1px;
+    letter-spacing: 0.7px;
+
+
 }
 
 /* Added in { Personal } */
@@ -45,16 +48,19 @@ h4 {
     a.tag {
         font-size: 12px;
     }
+
+    text-align: left;
 }
 
 p {
     margin: 0 0 25px;
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 2;
+    font-family: "Avenir","Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     @media(min-width:768px) {
         margin: 0 0 35px;
         font-size: 20px;
-        line-height: 1.6;
+        line-height: 1.2;
     }
 }
 
@@ -70,6 +76,7 @@ a {
     color: $secondary-color;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
+    font-family: "Avenir","Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     transition: all .2s ease-in-out;
     &:hover,
     &:focus {
@@ -233,7 +240,7 @@ a {
 
 .content-section {
     margin-top: 100px;
-    padding-top: 100px;
+    padding-top: auto;
     @media(min-width:767px) {
         margin-top: 125px;
         padding-top: 125px;
@@ -244,15 +251,15 @@ a {
         max-width: 100%;
         height: auto;
         margin: 0 auto;
-        border: 1px solid $font-color;
+        border: 0px; 
     }
     /* Added in { Personal } */
     ul,
     ol {
-        text-align: center;
+        text-align: left;
         margin: 0 0 25px;
         font-size: 18px;
-        line-height: 1.5;
+        line-height: 1.4;
         list-style-position: inside;
     }
     pre {
@@ -280,7 +287,7 @@ a {
 
 .btn {
     border-radius: 0;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Gotham", Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -444,4 +451,23 @@ body {
 
 .fourofour {
   border: 1px solid $primary-color !important;
+}
+
+.cd-fixed-bg {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+}
+ 
+.cd-fixed-bg.cd-bg-1 {
+  background-image: url("../img/about-bg.jpg");
+}
+.cd-fixed-bg.cd-bg-2 {
+  background-image: url("../img/post-bg.jpg");
+}
+.cd-fixed-bg.cd-bg-3 {
+  background-image: url("../img/resume-bg.jpg");
 }
